@@ -1,0 +1,15 @@
+spring:
+  mail:
+    protocol:
+    host:
+    port:
+    username:
+    password:
+
+rabbit:
+  queue: EMAIL_SENDING_TASKS
+  exchange: exchange
+  routing-key: ManagerKey
+
+sender:
+  address:

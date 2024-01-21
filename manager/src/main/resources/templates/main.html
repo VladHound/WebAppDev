@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Modals · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/modals/">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/modals.css" rel="stylesheet">
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+<header>
+    <main>
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a th:href="@{/}"
+                   class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img class="bi me-2" width="46" height="28" aria-label="Bootstrap"
+                         th:src="@{/img/cloud_icon.png}" alt="">
+                </a>
+                <div class="col-md-3 text-end">
+                    <div class="nav m-auto">
+                        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Login
+                        </button>
+                        <form method="GET">
+                            <button type="submit" class="btn btn-primary">Create Account</button>
+                        </form>
+                    </div>
+                    <div class="nav m-auto">
+                        <form method="GET">
+                            <button class="btn btn-warning me-2">
+                                Sign in
+                            </button>
+                        </form>
+                        <form method="POST">
+                            <button type="submit" class="btn btn-danger">Log out</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+    <!--            <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog"-->
+    <!--                 id="modalSignin">-->
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <div class="modal-body p-5 pt-0">
+                <form class="" id="registerForm">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput"
+                               placeholder="name@example.com" name="email">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword"
+                               placeholder="Password" name="password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" data-dismiss="modal">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--<div class="container-md">-->
+
+<!--    &lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">-->
+<!--        Launch demo modal3-->
+<!--    </button>-->
+
+
+<!--    <div class="b-example-divider"></div>-->
+
+<!--    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--        <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--            <div class="modal-content rounded-4 shadow">-->
+<!--                <div class="modal-header p-5 pb-4 border-bottom-0">-->
+<!--                    &lt;!&ndash; <h1 class="modal-title fs-5" >Modal title</h1> &ndash;&gt;-->
+<!--                    <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>-->
+<!--                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--                </div>-->
+
+<!--                <div class="modal-body p-5 pt-0">-->
+<!--                    <form class="" method="POST">-->
+<!--                        <div class="form-floating mb-3">-->
+<!--                            <input type="email" class="form-control rounded-3" id="floatingInput"-->
+<!--                                   placeholder="name@example.com">-->
+<!--                            <label for="floatingInput">Email address</label>-->
+<!--                        </div>-->
+<!--                        <div class="form-floating mb-3">-->
+<!--                            <input type="password" class="form-control rounded-3" id="floatingPassword"-->
+<!--                                   placeholder="Password">-->
+<!--                            <label for="floatingPassword">Password</label>-->
+<!--                        </div>-->
+
+<!--                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" data-bs-toggle="modal"-->
+<!--                                data-bs-target="#exampleModal">Sign up-->
+<!--                        </button>-->
+
+<!--                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>-->
+
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<div class="b-example-divider"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script src="./js/script.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
+
+
+<!--<header>-->
+<!--    <main>-->
+<!--        <div class="container">-->
+<!--            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">-->
+<!--                <a th:href="@{/}"-->
+<!--                   class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">-->
+<!--                    <img class="bi me-2" width="46" height="28" aria-label="Bootstrap"-->
+<!--                         th:src="@{/img/cloud_icon.png}" alt="">-->
+<!--                </a>-->
+<!--                <div class="col-md-3 text-end">-->
+<!--                    <div class="nav m-auto" th:if="${#authentication == null}">-->
+<!--                        <form method="GET" th:action="@{/auth/login}">-->
+<!--                            <button type="submit" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>-->
+<!--                        </form>-->
+<!--                        <form method="GET" th:action="@{/auth/registration}">-->
+<!--                            <button type="submit" class="btn btn-primary">Create Account</button>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                    <div class="nav m-auto" th:unless="${#authentication == null}">-->
+<!--                        <form method="GET" th:action="@{/}">-->
+
+<!--                            <button th:text="${#authentication.getPrincipal().getUsername()}"-->
+<!--                                    class="btn btn-warning me-2">-->
+<!--                                Sign in-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!--                        <form method="POST" th:action="@{/logout}">-->
+<!--                            <button type="submit" class="btn btn-danger">Log out</button>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </main>-->
+<!--</header>-->

@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: ide
+  rabbitmq:
+    host: localhost
+    port: 5672
